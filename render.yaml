@@ -1,0 +1,9 @@
+services:
+ - type: web
+   name: lab-config-render
+   runtime: static
+   buildCOmmand: echo "sin build"
+   staticPublishPath: ./public
+   envVars:
+      - key: ENTORNO
+        value: laboratorio
